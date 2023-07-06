@@ -12,6 +12,7 @@
     / /_/ / _, _/ /_/ / /_/ / ____/  / /|  // // /|  / /___    
     \____/_/ |_|\____/\____/_/      /_/ |_/___/_/ |_/_____/
 
+
 ## The CloudVeneto Experience: a quick checklist
 
 1. Open a terminal and enter the CV gate machine:
