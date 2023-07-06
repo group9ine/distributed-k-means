@@ -1,5 +1,6 @@
 # Distributed `k-means` with PySpark
 `README` for internal use.
+
         ____                                   __   __         
        / __ \____ _      _____  ________  ____/ /  / /_  __  __
       / /_/ / __ \ | /| / / _ \/ ___/ _ \/ __  /  / __ \/ / / /
@@ -14,9 +15,9 @@
 ## The CloudVeneto Experience: a quick checklist
 
 1. Open a terminal and enter the CV gate machine:
-       ssh gbordin@gate.cloudveneto.it
+    ssh gbordin@gate.cloudveneto.it
    When prompted, enter the longer password.
-2. When inside, access the VM of your choice – usually the `master` – with
+3. When inside, access the VM of your choice – usually the `master` – with
        ssh -i private/gbordin.pem bordin@10.67.22.239
    Use the shorter password this time. If for some reason you want to
    access the slaves right away, just substitute their IP address on the
