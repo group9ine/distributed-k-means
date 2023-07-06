@@ -39,17 +39,18 @@
    defining also the tunnelling ports:
    
        ssh -J gbordin@gate.cloudveneto.it \
-           -L aaaa:localhost9999 \
-           -L bbbb:localhost:8080 \
-           -L cccc:localhost:4040 \
+           -L 8008:localhost9999 \
+           -L 1234:localhost:8080 \
+           -L 4321:localhost:4040 \
            bordin@10.67.22.239
    
-   Substitute `aaaa`, `bbbb` and `cccc` with the ports of your choice.
-   `aaaa` is for the Jupyter notebook, `bbbb` for the Spark master page and
-   `cccc` for the workers’ dashboard.
-9. Open `localhost:aaaa` (`bbbb`, `cccc`) on your browser and you should
-   be able to access the Jupyter session and the Spark stuff.
-10. When you finish your work, remember to stop the cluster by running the
+   Substitute `8008`, `1234` and `4321` with the ports of your choice.
+   `8008` is for the Jupyter notebook, `1234` for the Spark master page and
+   `4321` for the workers’ dashboard.
+9. Open `localhost:8008` (`1234`, `4321`, or the ports that you’ve chosen)
+   on your browser and you should be able to access the Jupyter session and
+   the Spark stuff.
+11. When you finish your work, remember to stop the cluster by running the
    `stop_cluster` script from the `master` VM.
 
 You can jump between the VMs when you’re inside with `ssh master`, `ssh
