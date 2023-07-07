@@ -14,7 +14,7 @@
     
 
 
-## The CloudVeneto Experience: a quick checklist
+## The CloudVeneto Experience
 
 1. Open a terminal and enter the CV gate machine:
 
