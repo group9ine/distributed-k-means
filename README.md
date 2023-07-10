@@ -18,15 +18,18 @@
 1. Open a terminal and enter the CV gate machine:
 
        ssh gbordin@gate.cloudveneto.it
+
    When prompted, enter the longer password.
 3. When inside, access the VM of your choice – usually the `master` – with
    
        ssh -i private/gbordin.pem bordin@10.67.22.239   
+
    Use the shorter password this time. If for some reason you want to
    access the slaves right away, just substitute their IP address on the
    right of the @. The command prompt should change to
       
        bordin@mapd-b-2023-gr04-1:~$   
+
    or `gr04-2`/`gr04-3` if you accessed the slaves.
 5. Start the cluster by running the script `start_cluster`.
 6. Enter the command `sparkup`: it should open a jupyter-notebook session
@@ -35,10 +38,11 @@
    defining also the tunnelling ports:
    
        ssh -J gbordin@gate.cloudveneto.it \
-           -L 8008:localhost9999 \
+           -L 8008:localhost:9999 \
            -L 1234:localhost:8080 \
            -L 4321:localhost:4040 \
            bordin@10.67.22.239
+
    Substitute `8008`, `1234` and `4321` with the ports of your choice.
    `8008` is for the Jupyter notebook, `1234` for the Spark master page and
    `4321` for the workers’ dashboard.
