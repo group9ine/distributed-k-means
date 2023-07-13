@@ -33,12 +33,12 @@
    or `gr04-2`/`gr04-3` if you accessed the slaves.
 5. Start the cluster by running the script `start_cluster`.
 6. Enter the command `sparkup`: it should open a jupyter-notebook session
-   on the 9999 port of the VM.
+   on the 9000 port of the VM.
 7. Open a new terminal and re-enter the cloud by skipping right to the VM,
    defining also the tunnelling ports:
    
        ssh -J gbordin@gate.cloudveneto.it \
-           -L 8008:localhost:9999 \
+           -L 8008:localhost:9000 \
            -L 1234:localhost:8080 \
            -L 4321:localhost:4040 \
            bordin@10.67.22.239
